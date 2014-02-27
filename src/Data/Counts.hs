@@ -135,7 +135,7 @@ member x = M.member x . counts_
 
 inc :: (Ord a) => a -> Counts a -> Counts a
 inc x cs = Counts {
-  counts_ = M.adjust (+1) x (counts_ cs),
+  counts_ = M.insertWith (+) x 1 (counts_ cs),
   total   = total cs + 1}
 
 dec :: (Ord a) => a -> Counts a -> Counts a

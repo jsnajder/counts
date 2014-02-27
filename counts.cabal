@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                counts
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            A simple data structure for counting values
 -- description:         
 homepage:            http://github.com/jsnajder/counts
@@ -18,5 +18,5 @@ cabal-version:       >=1.8
 library
   exposed-modules:     Data.Counts
   -- other-modules:       
-  build-depends:       base ==4.5.*, containers ==0.5.*
+  build-depends:       base ==4.6.*, containers ==0.5.*
   hs-source-dirs:      src
