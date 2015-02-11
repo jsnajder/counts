@@ -46,7 +46,7 @@ import Data.Ord (comparing)
 import Data.List (sortBy,foldl')
 
 data Counts a = Counts {
-  counts_ :: M.Map a Int,
+  counts_ :: !(M.Map a Int),
   total   :: !Int }
   deriving Eq
 
